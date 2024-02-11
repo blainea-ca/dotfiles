@@ -1,0 +1,109 @@
+tap "homebrew/bundle"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# B2 Cloud Storage Command-Line Tools
+brew "b2-tools"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Docker CLI plugin for extended build capabilities with BuildKit
+brew "docker-buildx"
+# Isolated development environments using Docker
+brew "docker-compose"
+# Modern, maintained replacement for ls
+brew "eza"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# GitHub command-line tool
+brew "gh"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Mac App Store command-line interface
+brew "mas"
+# Unified display of technical and tag data for audio/video
+brew "media-info"
+# 'traceroute' and 'ping' in a single tool
+brew "mtr"
+# Port scanning utility for large networks
+brew "nmap"
+# 7-Zip (high compression file archiver) implementation
+brew "p7zip"
+# Password generator
+brew "pwgen"
+# Advanced console-based IP subnet calculator
+brew "sipcalc"
+# User interface to the TELNET protocol
+brew "telnet"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
+# Command-line interface for 1Password
+cask "1password-cli"
+# Screen capturing tool
+cask "cleanshot"
+# Voice and text chat software
+cask "discord"
+# Web browser
+cask "firefox"
+# Client for the Google Drive storage service
+cask "google-drive"
+# Tools to protect your emails and files
+cask "gpg-suite"
+# Grammarly for desktop
+cask "grammarly-desktop"
+# Apple Device Configuration Profile Editor
+cask "imazing-profile-editor"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# VPN client
+cask "mullvadvpn"
+# Simple application that will prevent iTunes or Apple Music from launching
+cask "notunes"
+# Open-source software for live streaming and screen recording
+cask "obs"
+# Create configuration profiles containing a PPPC payload
+cask "pppc-utility"
+# Create standard or customized configuration profiles
+cask "profilecreator"
+# Instant messaging application focusing on security
+cask "signal"
+# Text editor for code, markup and prose
+cask "sublime-text"
+# Application for inspecting installer packages
+cask "suspicious-package"
+# OpenVPN client with AppleScript support
+cask "viscosity"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
+mas "1Password for Safari", id: 1569813296
+mas "Apple Configurator", id: 1037126344
+mas "Brother P-touch Editor", id: 1453365242
+mas "Keka", id: 470158793
+mas "Mactracker", id: 430255202
+mas "Numbers", id: 409203825
+mas "Speedtest", id: 1153157709
+mas "The Camelizer", id: 1532579087
+mas "Things", id: 904280696
+mas "WiFi Explorer", id: 494803304
+mas "Xcode", id: 497799835
+vscode "codezombiech.gitignore"
+vscode "dnicolson.binary-plist"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.vscode-pull-request-github"
+vscode "golang.go"
+vscode "janisdd.vscode-edit-csv"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "redhat.vscode-xml"
+vscode "redhat.vscode-yaml"
+vscode "timonwong.shellcheck"
+vscode "yzhang.markdown-all-in-one"
