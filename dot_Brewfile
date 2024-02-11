@@ -92,6 +92,7 @@ mas "The Camelizer", id: 1532579087
 mas "Things", id: 904280696
 mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835
+vscode "1password.op-vscode"
 vscode "codezombiech.gitignore"
 vscode "dnicolson.binary-plist"
 vscode "github.copilot"
