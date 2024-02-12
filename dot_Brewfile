@@ -75,6 +75,8 @@ cask "signal"
 cask "sublime-text"
 # Application for inspecting installer packages
 cask "suspicious-package"
+# Virtual machines UI using QEMU
+cask "utm"
 # OpenVPN client with AppleScript support
 cask "viscosity"
 # Open-source code editor
