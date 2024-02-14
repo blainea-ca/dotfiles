@@ -45,6 +45,8 @@ brew "yt-dlp"
 cask "1password-cli"
 # Screen capturing tool
 cask "cleanshot"
+# Disk space visualizer
+cask "daisydisk"
 # Voice and text chat software
 cask "discord"
 # Web browser
@@ -65,6 +67,8 @@ cask "mullvadvpn"
 cask "notunes"
 # Open-source software for live streaming and screen recording
 cask "obs"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Create configuration profiles containing a PPPC payload
 cask "pppc-utility"
 # Create standard or customized configuration profiles
