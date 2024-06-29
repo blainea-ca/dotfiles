@@ -5,6 +5,8 @@ brew "awscli"
 brew "b2-tools"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
 # Pack, ship and run any application as a lightweight container
@@ -21,6 +23,8 @@ brew "ffmpeg"
 brew "gh"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Improved top (interactive process viewer)
+brew "htop"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew "iperf3"
 # Lightweight and flexible command-line JSON processor
@@ -41,10 +45,14 @@ brew "pwgen"
 brew "sipcalc"
 # User interface to the TELNET protocol
 brew "telnet"
-# Fork of youtube-dl with additional features and fixes
+# Internet file retriever
+brew "wget"
+# Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Command-line interface for 1Password
 cask "1password-cli"
+# Open-source code editor for web-development
+cask "brackets"
 # Screen capturing tool
 cask "cleanshot"
 # Disk space visualiser
@@ -75,6 +83,8 @@ cask "obsidian"
 cask "pppc-utility"
 # Create standard or customised configuration profiles
 cask "profilecreator"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
 # Instant messaging application focusing on security
 cask "signal"
 # Text editor for code, markup and prose
@@ -94,6 +104,7 @@ mas "Apple Configurator", id: 1037126344
 mas "Brother P-touch Editor", id: 1453365242
 mas "Keka", id: 470158793
 mas "Mactracker", id: 430255202
+mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Speedtest", id: 1153157709
 mas "The Camelizer", id: 1532579087
