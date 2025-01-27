@@ -55,12 +55,16 @@ cask "1password-cli"
 cask "brackets"
 # Screen capturing tool
 cask "cleanshot"
+# Server and cloud storage browser
+cask "cyberduck"
 # Disk space visualiser
 cask "daisydisk"
 # Voice and text chat software
 cask "discord"
 # Web browser
 cask "firefox"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "google-cloud-sdk"
 # Client for the Google Drive storage service
 cask "google-drive"
 # Tools to protect your emails and files
@@ -71,6 +75,8 @@ cask "grammarly-desktop"
 cask "imazing-profile-editor"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# App to manage software development and track bugs
+cask "linear-linear"
 # VPN client
 cask "mullvadvpn"
 # Simple application that will prevent iTunes or Apple Music from launching
