@@ -113,13 +113,13 @@ export NVM_DIR="$HOME/.nvm"
 
 # GYB - Got Your Back (GYB) is a command line tool for backing up your Gmail messages to your local computer.
 # https://github.com/GAM-team/got-your-back
-alias gyb='~/bin/gyb/gyb'
+alias gyb="~/bin/gyb/gyb"
 # Upgrade GYB
 alias upgrade_gyb="bash <(curl -s -S -L https://git.io/gyb-install) -l"
 
 
 # GAM - A command line tool for Google Workspace admins to manage domain and user settings quickly and easily.
 # https://github.com/GAM-team/GAM
-alias gam="/Users/blaine.aldridge/bin/gam7/gam"
+alias gam="~/bin/gam7/gam"
 # Upgrade GAM
 alias upgrade_gam="bash <(curl -s -S -L https://git.io/gam-install) -l"
