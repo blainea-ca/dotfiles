@@ -7,16 +7,24 @@ brew "b2-tools"
 brew "chezmoi"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
+# Linux virtual machines
+brew "lima"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Docker CLI plugin for extended build capabilities with BuildKit
 brew "docker-buildx"
-# Isolated development environments using Docker
-brew "docker-compose"
 # Modern, maintained replacement for ls
 brew "eza"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Reliable Internet Stream Transport (RIST)
+brew "librist"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # GitHub command-line tool
@@ -27,6 +35,8 @@ brew "go"
 brew "htop"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew "iperf3"
+# Modular IRC client
+brew "irssi"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Mac App Store command-line interface
@@ -37,16 +47,30 @@ brew "media-info"
 brew "mtr"
 # Port scanning utility for large networks
 brew "nmap"
+# Platform built on V8 to build network applications
+brew "node@18"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
+# Tool for managing OCI containers and pods
+brew "podman"
+# Alternative to docker-compose using podman
+brew "podman-compose"
 # Password generator
 brew "pwgen"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # Advanced console-based IP subnet calculator
 brew "sipcalc"
+# Non-validating SQL parser
+brew "sqlparse"
 # User interface to the TELNET protocol
 brew "telnet"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Internet file retriever
 brew "wget"
+# Linter for YAML files
+brew "yamllint"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Command-line interface for 1Password
@@ -55,6 +79,8 @@ cask "1password-cli"
 cask "brackets"
 # Screen capturing tool
 cask "cleanshot"
+# Write, edit, and chat about your code with AI
+cask "cursor"
 # Server and cloud storage browser
 cask "cyberduck"
 # Disk space visualiser
@@ -63,8 +89,9 @@ cask "daisydisk"
 cask "discord"
 # Web browser
 cask "firefox"
+cask "font-inter"
 # Set of tools to manage resources and applications hosted on Google Cloud
-cask "google-cloud-sdk"
+cask "gcloud-cli"
 # Client for the Google Drive storage service
 cask "google-drive"
 # Tools to protect your emails and files
@@ -75,16 +102,20 @@ cask "grammarly-desktop"
 cask "imazing-profile-editor"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Grammar, spelling and style suggestions in all the writing apps
+cask "languagetool-desktop"
 # App to manage software development and track bugs
 cask "linear-linear"
 # VPN client
-cask "mullvadvpn"
+cask "mullvad-vpn"
 # Simple application that will prevent iTunes or Apple Music from launching
 cask "notunes"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Browse, manage, inspect containers and images
+cask "podman-desktop"
 # Create configuration profiles containing a PPPC payload
 cask "pppc-utility"
 # Create standard or customised configuration profiles
@@ -93,10 +124,14 @@ cask "profilecreator"
 cask "rectangle"
 # Instant messaging application focusing on security
 cask "signal"
+# Video game digital distribution service
+cask "steam"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # Application for inspecting installer packages
 cask "suspicious-package"
+# Set up, configure, manage and analyze your UniFi network
+cask "ubiquiti-unifi-controller"
 # Virtual machines UI using QEMU
 cask "utm"
 # OpenVPN client with AppleScript support
@@ -105,13 +140,20 @@ cask "viscosity"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# Native desktop client for WhatsApp
+cask "whatsapp"
 mas "1Password for Safari", id: 1569813296
 mas "Apple Configurator", id: 1037126344
+mas "Bear", id: 1091189122
 mas "Brother P-touch Editor", id: 1453365242
+mas "Kagi for Safari", id: 1622835804
 mas "Keka", id: 470158793
+mas "Keynote", id: 409183694
 mas "Mactracker", id: 430255202
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
+mas "OpenIn", id: 1643649331
+mas "Passepartout", id: 1433648537
 mas "Speedtest", id: 1153157709
 mas "The Camelizer", id: 1532579087
 mas "Things", id: 904280696
@@ -125,10 +167,12 @@ vscode "github.copilot-chat"
 vscode "github.vscode-pull-request-github"
 vscode "golang.go"
 vscode "janisdd.vscode-edit-csv"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
 vscode "redhat.vscode-xml"
 vscode "redhat.vscode-yaml"
 vscode "timonwong.shellcheck"
