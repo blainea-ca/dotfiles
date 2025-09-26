@@ -7,10 +7,6 @@ brew "b2-tools"
 brew "chezmoi"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
-# Linux virtual machines
-brew "lima"
-# Container runtimes on MacOS (and Linux) with minimal setup
-brew "colima"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Docker CLI plugin for extended build capabilities with BuildKit
@@ -49,6 +45,8 @@ brew "mtr"
 brew "nmap"
 # Platform built on V8 to build network applications
 brew "node@18"
+# ISO-C API and CLI for generating UUIDs
+brew "ossp-uuid"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
 # Tool for managing OCI containers and pods
@@ -75,6 +73,8 @@ brew "yamllint"
 brew "yt-dlp"
 # Command-line interface for 1Password
 cask "1password-cli"
+# Display management tool
+cask "betterdisplay"
 # Open-source code editor for web-development
 cask "brackets"
 # Screen capturing tool
@@ -96,8 +96,6 @@ cask "gcloud-cli"
 cask "google-drive"
 # Tools to protect your emails and files
 cask "gpg-suite"
-# Grammarly for desktop
-cask "grammarly-desktop"
 # Apple Device Configuration Profile Editor
 cask "imazing-profile-editor"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -112,16 +110,16 @@ cask "mullvad-vpn"
 cask "notunes"
 # Open-source software for live streaming and screen recording
 cask "obs"
-# Knowledge base that works on top of a local folder of plain text Markdown files
-cask "obsidian"
 # Browse, manage, inspect containers and images
 cask "podman-desktop"
 # Create configuration profiles containing a PPPC payload
 cask "pppc-utility"
 # Create standard or customised configuration profiles
 cask "profilecreator"
-# Move and resize windows using keyboard shortcuts or snap areas
-cask "rectangle"
+# Window snapping tool
+cask "rectangle-pro"
+# CLI tools for Salesforce
+cask "salesforce-cli"
 # Instant messaging application focusing on security
 cask "signal"
 # Video game digital distribution service
@@ -150,7 +148,6 @@ mas "Kagi for Safari", id: 1622835804
 mas "Keka", id: 470158793
 mas "Keynote", id: 409183694
 mas "Mactracker", id: 430255202
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "OpenIn", id: 1643649331
 mas "Passepartout", id: 1433648537
@@ -158,10 +155,12 @@ mas "Speedtest", id: 1153157709
 mas "The Camelizer", id: 1532579087
 mas "Things", id: 904280696
 mas "WiFi Explorer", id: 494803304
+mas "Windows App", id: 1295203466
 mas "Xcode", id: 497799835
 vscode "1password.op-vscode"
 vscode "codezombiech.gitignore"
 vscode "dnicolson.binary-plist"
+vscode "dotjoshjohnson.xml"
 vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.vscode-pull-request-github"
