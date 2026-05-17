@@ -50,8 +50,8 @@ Install software managed with [`brew`](https://brew.sh):
 ## What chezmoi automates
 
 - 1Password + 1Password CLI - installed by
-  [`.chezmoiscripts/install-1password.sh`](.chezmoiscripts/install-1password.sh)
-  via the `read-source-state.pre` hook configured in
+  [`.install-1password.sh`](.install-1password.sh) via the
+  `read-source-state.pre` hook configured in
   [`.chezmoi.toml.tmpl`](.chezmoi.toml.tmpl).
 - Oh My Zsh - installed by
   [`.chezmoiscripts/run_once_before_omz.sh`](.chezmoiscripts/run_once_before_omz.sh)
