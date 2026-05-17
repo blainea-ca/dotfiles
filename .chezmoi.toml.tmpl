@@ -5,4 +5,4 @@
     email = "{{ $email }}"
 
 [hooks.read-source-state.pre]
-    command = ".chezmoiscripts/install-1password.sh"
+    command = "{{ .chezmoi.sourceDir }}/.chezmoiscripts/install-1password.sh"
