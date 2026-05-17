@@ -163,8 +163,6 @@ cask "visual-studio-code"
 cask "vlc"
 # Gecko based web browser
 cask "zen"
-# Video communication and virtual meeting platform
-cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Apple Configurator", id: 1037126344
 mas "Bear", id: 1091189122
