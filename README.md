@@ -47,6 +47,16 @@ Install software managed with [`brew`](https://brew.sh):
 
     brewfile-install
 
+Point iTerm2 at the chezmoi-managed prefs (one-time, after iTerm2 is installed by brew):
+
+1. Open iTerm2.
+2. Settings → General → Preferences:
+   - Load preferences from a custom folder or URL
+   - Set folder to: `~/.config/iterm2/`
+   - Save changes to folder automatically
+3. Quit and reopen iTerm2 - font, colors, profiles, and keybindings come
+   from `~/.config/iterm2/com.googlecode.iterm2.plist`.
+
 ## What chezmoi automates
 
 - 1Password + 1Password CLI - installed by
@@ -62,6 +72,9 @@ Install software managed with [`brew`](https://brew.sh):
   [`.chezmoiexternal.toml`](.chezmoiexternal.toml) (refreshed weekly).
 - Templated files (`~/.ssh/config`, `~/.gam/*`, `~/.gitconfig`, etc.) -
   rendered from 1Password on `chezmoi apply`.
+- iTerm2 prefs - `~/.config/iterm2/com.googlecode.iterm2.plist` is
+  chezmoi-managed; iTerm2 reads from that folder once pointed at it (see
+  the new-macOS setup step above).
 
 ## Updating `~/.ssh/config`
 
