@@ -1,30 +1,33 @@
-tap "homebrew/bundle"
+tap "netbirdio/tap"
+tap "tbvdm/tap"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # B2 Cloud Storage Command-Line Tools
 brew "b2-tools"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
-# Cloudflare Tunnel client (formerly Argo Tunnel)
-brew "cloudflared"
+# Linux virtual machines
+brew "lima"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Docker CLI plugin for extended build capabilities with BuildKit
 brew "docker-buildx"
+# Isolated development environments using Docker
+brew "docker-compose"
 # Modern, maintained replacement for ls
 brew "eza"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# GitHub command-line tool
+brew "gh"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
-# Reliable Internet Stream Transport (RIST)
-brew "librist"
-# Framework for layout and rendering of i18n text
-brew "pango"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
-# GitHub command-line tool
-brew "gh"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Improved top (interactive process viewer)
@@ -35,6 +38,12 @@ brew "iperf3"
 brew "irssi"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Command-line JSON pretty-printer
+brew "jsonpp"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Reliable Internet Stream Transport (RIST)
+brew "librist"
 # Mac App Store command-line interface
 brew "mas"
 # Unified display of technical and tag data for audio/video
@@ -43,18 +52,20 @@ brew "media-info"
 brew "mtr"
 # Port scanning utility for large networks
 brew "nmap"
-# Platform built on V8 to build network applications
-brew "node@18"
 # ISO-C API and CLI for generating UUIDs
 brew "ossp-uuid"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Tool for managing OCI containers and pods
 brew "podman"
 # Alternative to docker-compose using podman
 brew "podman-compose"
 # Password generator
 brew "pwgen"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Advanced console-based IP subnet calculator
@@ -73,14 +84,20 @@ brew "yamllint"
 brew "yt-dlp"
 # Command-line interface for 1Password
 cask "1password-cli"
+# Inspect application bundles
+cask "apparency"
+# Multi-cloud backup application
+cask "arq"
 # Display management tool
 cask "betterdisplay"
 # Open-source code editor for web-development
 cask "brackets"
+# Screen recording software
+cask "cap"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Screen capturing tool
 cask "cleanshot"
-# Write, edit, and chat about your code with AI
-cask "cursor"
 # Server and cloud storage browser
 cask "cyberduck"
 # Disk space visualiser
@@ -94,8 +111,10 @@ cask "font-inter"
 cask "gcloud-cli"
 # Client for the Google Drive storage service
 cask "google-drive"
-# Tools to protect your emails and files
-cask "gpg-suite"
+# AI-powered notepad for meetings
+cask "granola"
+# Speech to text application
+cask "handy"
 # Apple Device Configuration Profile Editor
 cask "imazing-profile-editor"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -103,9 +122,15 @@ cask "iterm2"
 # Grammar, spelling and style suggestions in all the writing apps
 cask "languagetool-desktop"
 # App to manage software development and track bugs
-cask "linear-linear"
+cask "linear"
 # VPN client
 cask "mullvad-vpn"
+# Music tagger
+cask "musicbrainz-picard"
+# Netbird UI Client
+cask "netbirdio/tap/netbird-ui"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
 # Simple application that will prevent iTunes or Apple Music from launching
 cask "notunes"
 # Open-source software for live streaming and screen recording
@@ -122,14 +147,12 @@ cask "rectangle-pro"
 cask "salesforce-cli"
 # Instant messaging application focusing on security
 cask "signal"
-# Video game digital distribution service
-cask "steam"
+# CSV editor
+cask "smoothcsv"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # Application for inspecting installer packages
 cask "suspicious-package"
-# Set up, configure, manage and analyze your UniFi network
-cask "ubiquiti-unifi-controller"
 # Virtual machines UI using QEMU
 cask "utm"
 # OpenVPN client with AppleScript support
@@ -138,15 +161,14 @@ cask "viscosity"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-# Native desktop client for WhatsApp
-cask "whatsapp"
 # Gecko based web browser
 cask "zen"
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Apple Configurator", id: 1037126344
 mas "Bear", id: 1091189122
 mas "Brother P-touch Editor", id: 1453365242
-mas "Kagi for Safari", id: 1622835804
 mas "Keka", id: 470158793
 mas "Keynote", id: 409183694
 mas "Mactracker", id: 430255202
@@ -160,20 +182,23 @@ mas "WiFi Explorer", id: 494803304
 mas "Windows App", id: 1295203466
 mas "Xcode", id: 497799835
 vscode "1password.op-vscode"
+vscode "anthropic.claude-code"
 vscode "codezombiech.gitignore"
 vscode "dnicolson.binary-plist"
 vscode "dotjoshjohnson.xml"
-vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.vscode-pull-request-github"
 vscode "golang.go"
 vscode "janisdd.vscode-edit-csv"
+vscode "mechatroner.rainbow-csv"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"
+vscode "ms-vscode.live-server"
+vscode "ms-vscode.makefile-tools"
 vscode "redhat.vscode-xml"
 vscode "redhat.vscode-yaml"
 vscode "timonwong.shellcheck"
