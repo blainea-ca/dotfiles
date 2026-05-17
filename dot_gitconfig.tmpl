@@ -1,9 +1,20 @@
 [user]
-	signingkey = F4E974708BE8842E
-	name = Blaine Aldridge
-	email = {{ .email }}
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM5FpYT8RSffDdfQj/Bmv2mB7s/0qlIxSavlWlZlV2P7
+  name = Blaine Aldridge
+  email = {{ .email }}
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
 [commit]
-	gpgsign = true
+  gpgsign = true
+
 [pager]
-	branch = false
-	diff = false
+  branch = false
+  diff = false
+
+[push]
+  autoSetupRemote = true
