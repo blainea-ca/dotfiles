@@ -63,3 +63,11 @@ Install dotfiles with [`chezmoi`](https://www.chezmoi.io):
 Install Software managed with [`brew`](https://brew.sh):
 
     brewfile-install
+
+## Updating `~/.ssh/config`
+
+The SSH config lives in a 1Password Document named `chezmoi-ssh-config`, referenced from [`dot_ssh/config.tmpl`](dot_ssh/config.tmpl). 
+
+Push updates from local file to 1Password
+
+    op document edit "chezmoi-ssh-config" ~/.ssh/config
