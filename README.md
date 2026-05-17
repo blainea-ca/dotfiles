@@ -21,7 +21,7 @@ Install chezmoi:
 Initialize - this clones the repo, the pre-source-state hook installs
 1Password and 1Password CLI, then exits with sign-in instructions:
 
-    chezmoi init --apply blainea-ca
+    chezmoi init --apply --ssh blainea-ca
 
 Sign in to 1Password:
 
