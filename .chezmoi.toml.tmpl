@@ -1,3 +1,8 @@
+{{- $name := promptString "name" -}}
 {{- $email := promptString "email" -}}
 [data]
+    name = "{{ $name }}"
     email = "{{ $email }}"
+
+[hooks.read-source-state.pre]
+    command = ".chezmoiscripts/install-1password.sh"

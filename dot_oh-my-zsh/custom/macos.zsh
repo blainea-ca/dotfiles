@@ -26,5 +26,5 @@ export PODMAN_COMPOSE_WARNING_LOGS=false
 export EDITOR=nano
 export VISUAL="$EDITOR"
 
-# 1Password plugins
-source $HOME/.config/op/plugins.sh
+# 1Password plugins (created by `op plugin init <plugin>`; guarded for fresh machines)
+[ -f $HOME/.config/op/plugins.sh ] && source $HOME/.config/op/plugins.sh

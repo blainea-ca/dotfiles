@@ -1,68 +1,67 @@
 # github.com/blainea-ca/dotfiles
 
-blainea-ca's dotfiles, managed with [`chezmoi`](https://www.chezmoi.io)
+blainea-ca's dotfiles, managed with [`chezmoi`](https://www.chezmoi.io).
 
-Install them with:
-
-    chezmoi init --apply blainea-ca
-
-Personal secrets are stored in [1Password](https://1password.com) and you'll
-need the [1Password CLI](https://developer.1password.com/docs/cli/) installed.
-
-Login to 1Password with:
-
-    eval $(op signin)
-
-Software managed with [`brew`](https://brew.sh)
-
-Install with:
-
-    brew bundle install --file=~/.Brewfile
+Personal secrets live in [1Password](https://1password.com); the
+[1Password CLI](https://developer.1password.com/docs/cli/) is required to
+render templates that reference vaulted items.
 
 ## New macOS setup
+
+Prerequisites: [Homebrew](https://brew.sh).
 
 Install Homebrew:
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-Install 1Password, 1Password-CLI, and Chezmoi
+Install chezmoi:
 
-    brew install 1password 1password-cli chezmoi
+    brew install chezmoi
 
-Personal secrets are stored in [1Password](https://1password.com) and you'll
-need the [1Password CLI](https://developer.1password.com/docs/cli/) installed.
+Initialize - this clones the repo, the pre-source-state hook installs
+1Password and 1Password CLI, then exits with sign-in instructions:
 
-Login to 1Password with:
+    chezmoi init --apply blainea-ca
 
-    eval $(op signin)
+Sign in to 1Password:
+
+1. Open 1Password and sign in.
+2. In 1Password → Settings → Developer, enable:
+   - Integrate with 1Password CLI
+   - Use the SSH agent
+   - Then run `eval $(op signin)`
 
 Install the 1Password AWS CLI plugin:
 
     op plugin init aws
 
-Install Oh My Zsh:
+Apply the rest of the templates (op can now resolve secrets):
 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    chezmoi apply
 
-Install Powerlevel10k theme for Zsh:
+Fetch SSH public key files:
 
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+    op read "op://Private/Example SSH Key/public key" > ~/.ssh/id_example.pub
 
-Install Zsh Syntax Highlighting plugin
-
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-Install Zsh Auto Suggestions plugin
-
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-Install dotfiles with [`chezmoi`](https://www.chezmoi.io):
-
-    chezmoi init --apply blainea-ca
-
-Install Software managed with [`brew`](https://brew.sh):
+Install software managed with [`brew`](https://brew.sh):
 
     brewfile-install
+
+## What chezmoi automates
+
+- 1Password + 1Password CLI - installed by
+  [`.chezmoiscripts/install-1password.sh`](.chezmoiscripts/install-1password.sh)
+  via the `read-source-state.pre` hook configured in
+  [`.chezmoi.toml.tmpl`](.chezmoi.toml.tmpl).
+- Oh My Zsh - installed by
+  [`.chezmoiscripts/run_once_before_omz.sh`](.chezmoiscripts/run_once_before_omz.sh)
+  if `~/.oh-my-zsh` doesn't exist. Runs before any files are applied so the
+  framework exists before `.zshrc` lands and before externals clone plugins.
+- powerlevel10k, zsh-syntax-highlighting, zsh-autosuggestions - cloned
+  into `~/.oh-my-zsh/custom/` by
+  [`.chezmoiexternal.toml`](.chezmoiexternal.toml) (refreshed weekly).
+- Templated files (`~/.ssh/config`, `~/.gam/*`, `~/.gitconfig`, etc.) -
+  rendered from 1Password on `chezmoi apply`.
 
 ## Updating `~/.ssh/config`
 
