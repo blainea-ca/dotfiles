@@ -1,0 +1,4 @@
+# Block npm/pnpm from resolving package versions newer than this many minutes.
+# 20160 = 14 days. Mitigates supply-chain risk from compromised fresh releases.
+minimum-release-age=20160
+minimum-release-age-exclude=
