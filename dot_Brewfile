@@ -105,8 +105,6 @@ cask "discord"
 # Web browser
 cask "firefox"
 cask "font-inter"
-# Set of tools to manage resources and applications hosted on Google Cloud
-cask "gcloud-cli"
 # Client for the Google Drive storage service
 cask "google-drive"
 # AI-powered notepad for meetings
